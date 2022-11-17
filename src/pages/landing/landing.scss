@@ -1,0 +1,11 @@
+.landing {
+  background-color: #78675B;
+  background-repeat: repeat-y;
+  min-height: 100vh;
+
+  .showcase {
+    background-image: url('../../assets/open-book.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
