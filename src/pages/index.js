@@ -1,1 +1,1 @@
-export { default as Landing } from "../landing/landing";
+export { default as Landing } from "./landing/Landing.jsx";
