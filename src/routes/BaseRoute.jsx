@@ -10,6 +10,7 @@ const BaseRoute = () => {
             {/*Public routes*/}
             {/* <Route path="/" element={< />} />
             <Route path="/" element={< />} /> */}
+            <Route path="/" element={<Landing/>}/>
             <Route path="/register" element={<SignUp/>} />
             <Route path="/login" element={<Login/>} />
 
