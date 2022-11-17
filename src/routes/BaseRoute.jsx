@@ -1,7 +1,7 @@
 import React from "react";
 import ProtectedRoute from "./ProtectedRoute";
 import { Routes, Route } from "react-router-dom";
-import { SignUp, Login } from '../pages';
+import { Landing, SignUp, Login } from '../pages';
 
 
 const BaseRoute = () => {
