@@ -1,5 +1,6 @@
 .navbar {
   padding: 0 5%;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,16 +10,28 @@
 
   .navbar__logo {
     display: flex;
+    align-items: center;
+    min-width: 140px;
 
     .logo {
       max-width: 100%;
       max-height: 100%;
+      min-width: 40px;
+    }
+
+    .typeface {
+      font-family: 'Poppins';
+      color: #fff;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 22px;
     }
   }
 
   .navbar__menu {
-    width: 70%;
-    min-width: 200px; 
+    width: 65%;
+    min-width: 120px; 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -49,14 +62,27 @@
     justify-content: space-between;
     margin-left: auto;
     position: absolute;
-    background-color: #857625;
-
+    z-index: 2;
+    top: 50px;
+    right: -5vw;
+    min-width: 260px;
+    background: rgba(133, 118, 37, 1);
+    backdrop-filter: brightness(0.7);
+    padding: 1.3em 1em;
 
     @media screen and (min-width: 760px) {
+      display: flex;
       position: static;
       flex-direction: row;
+      gap: 1.5em;
       align-items: center;
       justify-content: space-between;
+      background: none;
+      backdrop-filter: none;
+    }
+
+    @media screen and (max-width: 760px) {
+      gap: 1.3em;
     }
 
     .navbar__link {
@@ -69,9 +95,27 @@
       line-height: 1.3rem;
       letter-spacing: 0.01em;
       color: #FFFFFF;
+      padding: 1.3em 1em;
 
-      &hover {
-        color: #857625;
+      &:hover {
+        color: #d6bf39;
+      }
+
+      &.btn {
+        width: 60px;
+        letter-spacing: 0.01rem;
+        text-align: center;
+        padding: 8px;
+        background: rgba(232, 214, 57, 0.6);
+        border: 1px solid rgba(232, 214, 57, 0.6);
+        box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        @media screen and (max-width: 760px) {
+          background: unset;
+          border: unset;
+          box-shadow: unset;
+        }
       }
     }
   }

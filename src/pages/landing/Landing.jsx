@@ -9,8 +9,12 @@ export default function Landing(props) {
         <Hero/>
         <Banner/>
       </div>
-      <Pitch/>
-      <Footer/>
+      <div className="pitch__bg">
+        <Pitch/>  
+      </div>
+      <div className="footer__bg">
+        <Footer/>  
+      </div>
     </div>
   );
 }

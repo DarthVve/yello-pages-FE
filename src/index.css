@@ -1,4 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 100;
+  src: local('Poppins'), url(./assets/fonts/Poppins-Thin.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 200;
+  src: local('Poppins'), url(./assets/fonts/Poppins-ExtraLight.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 300;
+  src: local('Poppins'), url(./assets/fonts/Poppins-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: local('Poppins'), url(./assets/fonts/Poppins-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: local('Poppins'), url(./assets/fonts/Poppins-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: local('Poppins'), url(./assets/fonts/Poppins-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: local('Poppins'), url(./assets/fonts/Poppins-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 800;
+  src: local('Poppins'), url(./assets/fonts/Poppins-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: local('Poppins'), url(./assets/fonts/Poppins-Black.woff2) format("woff2");
+}
 
 
 body {

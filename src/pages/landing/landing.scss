@@ -3,9 +3,12 @@
   background-repeat: repeat-y;
   min-height: 100vh;
 
-  .showcase {
+  .showcase, .pitch__bg, .footer__bg {
     background-image: url('../../assets/open-book.jpeg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
   }
 }
