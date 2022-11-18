@@ -1,0 +1,68 @@
+.hero {
+  padding: 50px 5% 30px;
+  backdrop-filter: brightness(0.3);
+  position: relative;
+
+  .cta {
+    color: #fff;
+    max-width: 450px;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0.6;
+    z-index: 1;
+    position: relative;
+    isolation: isolate;
+
+    .cta__heading {
+      line-height: 2.3rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .cta__text {
+      margin-bottom: 2rem;
+    }
+    .cta__btn {
+      color: #fff;
+      font-weight: 600;
+      padding: 10px 20px;
+      background: rgba(232, 214, 57, 0.6);
+      border: 1px solid rgba(232, 214, 57, 0.6);
+      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      text-decoration: none;
+    }
+  }
+
+  .graphic {
+    position: absolute;
+    right: 5%;
+    bottom: -5%;
+    height: 100%;
+    min-width: min(90%, 200px);
+    max-width: 500px;
+    gap: 20px;
+    aspect-ratio: 1/1;
+    display: none;
+    flex-shrink: 0.4;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    .graphic__img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.9;
+      background-blend-mode: overlay;
+    }
+  }
+}
