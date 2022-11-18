@@ -1,0 +1,41 @@
+.backdrop {
+    overflow: hidden;
+    margin:auto;
+    height: 100vh;
+    background: url(../../assets/open-book.jpeg);
+    background-position: top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #2f231b;
+        opacity: 0.8;
+        backdrop-filter: blur(2px) grayscale(25%) contrast(1.5);
+        isolation: isolate;
+    }
+
+    .backdrop-2 {
+        isolation: isolate;
+        position: relative;
+        z-index: 1;
+        width: 40%;
+        height: 100%;
+        opacity: 0.98;
+        background: url(../../assets/papers-slanted.png);
+        filter: saturate(60%) brightness(0.7) drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.25));
+        // background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // transform: skew(-8deg) translateX(-70px);  
+        //transform-origin: top left;
+
+        
+    }
+}
